@@ -1,17 +1,32 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{'show-grid':show}">
+    <show-grid :show="show" @update="showGrid"></show-grid>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import ShowGrid from './components/ShowGrid'
 export default {
-    name: 'app'
+    name: 'app',
+    data() {
+        return {
+            show:false,
+        }
+    },
+    methods: {
+        showGrid(show) {
+            this.show = show
+        }
+    },
+    components: {
+        ShowGrid
+    }
 }
 </script>
 
 <style lang="scss">
-
+@import './scss/grid.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

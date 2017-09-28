@@ -55,11 +55,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+* {
+    box-sizing:border-box;
+}
 h1, h2 {
   font-weight: normal;
 }
 section {
     margin:4rem auto;
+    padding:1rem;
 }
 ul {
     list-style-type: none;
