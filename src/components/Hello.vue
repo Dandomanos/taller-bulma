@@ -55,9 +55,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
-* {
-    box-sizing:border-box;
-}
+
 h1, h2 {
   font-weight: normal;
 }
@@ -89,7 +87,7 @@ a {
     text-align:left;
     border:1px dashed #ccc;
     padding:1rem;
-    max-width:40rem;
+    max-width:45rem;
     margin:0 auto;
     width:auto;
 }

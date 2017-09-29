@@ -27,6 +27,11 @@ export default {
 
 <style lang="scss">
 @import './scss/grid.scss';
+html, body, * {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;  
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +39,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   padding:2rem;
-  margin-top: 6rem;
+  padding-top: 6rem;
   > img {
     margin-bottom:2rem;
     max-width:100%;
