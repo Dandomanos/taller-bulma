@@ -1,6 +1,5 @@
 <template>
   <div id="app" :class="{'show-grid':show}">
-    <show-grid :show="show" @update="showGrid"></show-grid>
     <div class="hero is-fullheight">
         <header class="hero-head">Header</header>
         <div class="hero-body">
@@ -8,6 +7,7 @@
         </div>
         <footer class="footer hero-foot">Footer</footer>
     </div>
+    <show-grid :show="show" @update="showGrid"></show-grid>
   </div>
 </template>
 
