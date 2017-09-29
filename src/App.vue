@@ -2,11 +2,11 @@
   <div id="app" :class="{'show-grid':show}">
     <show-grid :show="show" @update="showGrid"></show-grid>
     <div class="hero is-fullheight">
-        <div class="hero-head">Header</div>
+        <header class="hero-head">Header</header>
         <div class="hero-body">
-            <router-view class="container has-text-centered"></router-view>
+            <router-view class="container has-text-centered is-touch"></router-view>
         </div>
-        <div class="hero-foot">Footer</div>
+        <footer class="footer hero-foot">Footer</footer>
     </div>
   </div>
 </template>
