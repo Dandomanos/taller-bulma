@@ -59,15 +59,11 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-section {
-    margin:4rem auto;
-    padding:1rem;
-}
 ul {
     list-style-type: none;
     padding: 0;
     li {
-    display: inline-block;
+        display: inline-block;
     margin: 0 10px;
         img {
             max-width:40px;
@@ -79,6 +75,10 @@ ul {
 .hello {
     padding:2rem;
     padding-top: 6rem;
+    section {
+        margin:4rem auto;
+        padding:1rem;
+    }
 }
 
 
