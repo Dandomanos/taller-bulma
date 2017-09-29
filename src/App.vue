@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss">
 @import './scss/grid.scss';
+@import '~bulma';
 html, body, * {
     box-sizing:border-box;
     margin:0;
