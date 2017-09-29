@@ -1,6 +1,15 @@
 #app.show-grid {
     border:1px solid black;
-    section {
-        border:1px solid blue;
+    .hero {
+        border:1px solid lighten(black, 5);
+        .hero-head {
+            border:1px dashed red;
+        }
+        .hero-body {
+            border:1px dashed green;
+        }
+        .hero-foot {
+            border:1px dashed blue;
+        }
     }
 }
