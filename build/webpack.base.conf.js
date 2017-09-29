@@ -70,14 +70,14 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
-        test: /\.scss$/,
-        loader: 'sass-loader',
-        options: {
-          limit: 10000,
-          name: utils.assetsPath('css/[name].[hash:7].[ext]')
-        }
-      }
+      // {
+      //   test: /\.scss$/,
+      //   loader: 'sass-loader',
+      //   options: {
+      //     limit: 10000,
+      //     name: utils.assetsPath('css/[name].[hash:7].[ext]')
+      //   }
+      // }
     ]
   }
 }
