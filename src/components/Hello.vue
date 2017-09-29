@@ -62,6 +62,7 @@ h1, h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    margin:1rem;
     li {
         display: inline-block;
     margin: 0 10px;
