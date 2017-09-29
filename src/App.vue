@@ -37,10 +37,12 @@ export default {
 <style lang="scss">
 @import './scss/grid.scss';
 @import '~bulma';
-html, body, * {
-    box-sizing:border-box;
+html, body {
     margin:0;
     padding:0;  
+}
+* {
+    box-sizing:border-box;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
