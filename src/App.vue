@@ -1,7 +1,16 @@
 <template>
   <div id="app" :class="{'show-grid':show}">
     <show-grid :show="show" @update="showGrid"></show-grid>
-    <router-view></router-view>
+    <div class="hero is-fullheight">
+        <div class="hero-head">Header</div>
+        <div class="hero-body">
+            <div>
+                <router-view></router-view>
+            </div>
+        </div>
+        <div class="hero-foot">Footer</div>
+    </div>
+    
   </div>
 </template>
 
