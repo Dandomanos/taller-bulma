@@ -3,7 +3,7 @@
     <div class="hero is-fullheight">
         <header class="hero-head">Header</header>
         <div class="hero-body">
-            <router-view class="is-overlay"></router-view>
+            <router-view class="container is-overlay"></router-view>
         </div>
         <footer class="footer hero-foot">Footer</footer>
     </div>
