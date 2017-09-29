@@ -38,8 +38,8 @@ html, body, * {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  padding:2rem;
-  padding-top: 6rem;
+  margin:0;
+  padding:0;
   > img {
     margin-bottom:2rem;
     max-width:100%;
