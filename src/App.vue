@@ -4,13 +4,10 @@
     <div class="hero is-fullheight">
         <div class="hero-head">Header</div>
         <div class="hero-body">
-            <div>
-                <router-view></router-view>
-            </div>
+            <router-view class="container has-text-centered"></router-view>
         </div>
         <div class="hero-foot">Footer</div>
     </div>
-    
   </div>
 </template>
 
