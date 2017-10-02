@@ -1,15 +1,29 @@
+$wrapper-app: 1px solid black;
+$wrapper-container: 1px solid blue;
+$wrapper-content: 1px dashed red;
+$wrapper-child: 1px dashed green;
+
 #app.show-grid {
-    border:1px solid black;
+    border:$wrapper-app;
     .hero {
-        border:1px solid lighten(black, 5);
+        border:$wrapper-container;
         .hero-head {
-            border:1px dashed red;
+            border:$wrapper-content;
         }
         .hero-body {
-            border:1px dashed green;
+            border:$wrapper-content
         }
         .hero-foot {
-            border:1px dashed blue;
+            border:$wrapper-content;
         }
+    }
+    .columns, .level {
+        border:$wrapper-container;
+    }
+    .level-left, .level-right {
+        border:$wrapper-content;
+    }
+    .column, .level-item {
+        border:$wrapper-child;
     }
 }
