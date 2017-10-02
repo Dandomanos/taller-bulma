@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import News from '@/components/News'
+import Blog from '@/components/Blog'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ export default new Router({
             path: '/news',
             name: 'News',
             component: News
+        },
+        {
+            path: '/blog',
+            name: 'Blog',
+            component: Blog
         },
         {
             path:'*',

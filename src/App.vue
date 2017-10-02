@@ -5,19 +5,19 @@
             <nav class="level">
                 <div class="level-left">
                     <div class="level-item">
-                        <a href="">
+                        <router-link to="hello">
                             <img src="./assets/bulma-logo.png" alt="" width="150">
-                        </a>
+                        </router-link>
                     </div>
                     <div class="level-item">
-                        <a href="">
-                            Link
-                        </a>
+                        <router-link to="news">
+                            News
+                        </router-link>
                     </div>
                     <div class="level-item">
-                        <a href="">
-                            Link
-                        </a>
+                        <router-link to="blog">
+                            Blog
+                        </router-link>
                     </div>
                 </div>
                 <div class="level-right">
