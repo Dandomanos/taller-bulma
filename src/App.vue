@@ -1,11 +1,45 @@
 <template>
   <div id="app" :class="{'show-grid':show}">
     <div class="hero is-fullheight">
-        <header class="hero-head">Header</header>
+        <header class="hero-head">
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <a href="">
+                            <img src="./assets/bulma-logo.png" alt="" width="150">
+                        </a>
+                    </div>
+                    <div class="level-item">
+                        <a href="">
+                            Link
+                        </a>
+                    </div>
+                    <div class="level-item">
+                        <a href="">
+                            Link
+                        </a>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <input type="email" class="input" placeholder="Email">
+                    </div>
+                    <div class="level-item">
+                        <input type="password" class="input" placeholder="Contraseña">
+                    </div>
+                    <div class="level-item">
+                        <button class="button">
+                            Entrar
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div class="hero-body">
-            <router-view class="container is-overlay"></router-view>
+            <router-view class="container"></router-view>
         </div>
-        <footer class="footer hero-foot">Footer</footer>
+        <footer class="footer hero-foot">
+        </footer>
     </div>
     <show-grid :show="show" @update="showGrid"></show-grid>
   </div>
@@ -40,6 +74,9 @@ html, body {
 }
 * {
     box-sizing:border-box;
+}
+.container {
+    max-width:100%;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
