@@ -17,6 +17,18 @@
                     <div class="navbar-start">
                         <router-link class="navbar-item" to="news">News</router-link>
                         <router-link class="navbar-item" to="blog">Blog</router-link>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <div class="navbar-link">External Links</div>
+                            <div class="navbar-dropdown">
+                                <a href="http://www.google.com" target="_blank" class="navbar-item">
+                                    Google
+                                </a>
+                                <hr class="navbar-divider">
+                                <a href="http://www.bulma.iom" target="_blank" class="navbar-item">
+                                    Bulma
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="navbar-end">
                         <div class="navbar-item">
