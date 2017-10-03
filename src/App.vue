@@ -2,35 +2,12 @@
   <div id="app" :class="{'show-grid':show}">
     <div class="hero is-fullheight">
         <header class="hero-head">
-            <nav class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <router-link to="hello">
-                            <img src="./assets/bulma-logo.png" alt="" width="150">
-                        </router-link>
-                    </div>
-                    <div class="level-item">
-                        <router-link to="news">
-                            News
-                        </router-link>
-                    </div>
-                    <div class="level-item">
-                        <router-link to="blog">
-                            Blog
-                        </router-link>
-                    </div>
-                </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <input type="email" class="input" placeholder="Email">
-                    </div>
-                    <div class="level-item">
-                        <input type="password" class="input" placeholder="Contraseña">
-                    </div>
-                    <div class="level-item">
-                        <button class="button">
-                            Entrar
-                        </button>
+            <nav class="navbar is-primary">
+                <div class="hero">
+                    <div class="hero-body">
+                        <div class="container has-text-centered">
+                            Header
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -39,6 +16,17 @@
             <router-view class="container"></router-view>
         </div>
         <footer class="footer hero-foot">
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <div>Oficial<br><a href="">Link</a></div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div><a href="">Link2</a><br><small><a href="">Ver +</a></small></div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div><a href="">Link3</a></div>
+                </div>
+            </nav>
         </footer>
     </div>
     <show-grid :show="show" @update="showGrid"></show-grid>
