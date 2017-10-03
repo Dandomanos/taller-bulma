@@ -2,35 +2,32 @@
   <div id="app" :class="{'show-grid':show}">
     <div class="hero is-fullheight">
         <header class="hero-head">
-            <nav class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <router-link to="hello">
-                            <img src="./assets/bulma-logo.png" alt="" width="150">
-                        </router-link>
-                    </div>
-                    <div class="level-item">
-                        <router-link to="news">
-                            News
-                        </router-link>
-                    </div>
-                    <div class="level-item">
-                        <router-link to="blog">
-                            Blog
-                        </router-link>
-                    </div>
+            <nav class="navbar" role="navigation">
+                <div class="navbar-brand">
+                    <router-link to="hello" class="navbar-item">
+                        <img src="./assets/bulma-logo.png" alt="" width="150">
+                    </router-link>
+                    <button class="button navbar-burger" @click="toggleActive" :class="{'is-active':menuActive}">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <input type="email" class="input" placeholder="Email">
+                <div class="navbar-menu" id="navMenu" :class="{'is-active':menuActive}">
+                    <div class="navbar-start">
+                        <router-link class="navbar-item" to="news">News</router-link>
+                        <router-link class="navbar-item" to="blog">Blog</router-link>
                     </div>
-                    <div class="level-item">
-                        <input type="password" class="input" placeholder="Contraseña">
-                    </div>
-                    <div class="level-item">
-                        <button class="button">
-                            Entrar
-                        </button>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <input type="email" class="input" placeholder="Email">
+                        </div>
+                        <div class="navbar-item">
+                            <input type="password" class="input" placeholder="Contraseña">
+                        </div>
+                        <div class="navbar-item">
+                            <button class="button is-info">Entrar</button>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -52,11 +49,15 @@ export default {
     data() {
         return {
             show:false,
+            menuActive:false
         }
     },
     methods: {
         showGrid(show) {
             this.show = show
+        },
+        toggleActive() {
+            this.menuActive = !this.menuActive
         }
     },
     components: {
