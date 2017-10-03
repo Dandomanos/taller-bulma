@@ -2,7 +2,7 @@
   <div id="app" :class="{'show-grid':show}">
     <div class="hero is-fullheight">
         <header class="hero-head">
-            <nav class="navbar" role="navigation">
+            <nav class="navbar is-primary" role="navigation">
                 <div class="navbar-brand">
                     <router-link to="hello" class="navbar-item">
                         <img src="./assets/bulma-logo.png" alt="" width="150">
@@ -48,6 +48,17 @@
             <router-view class="container"></router-view>
         </div>
         <footer class="footer hero-foot">
+            <nav class="level">
+                <div class="level-item has-text-centered">
+                    <div>Oficial<br><a href="">Link</a></div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div><a href="">Link2</a><br><small><a href="">Ver +</a></small></div>
+                </div>
+                <div class="level-item has-text-centered">
+                    <div><a href="">Link3</a></div>
+                </div>
+            </nav>
         </footer>
     </div>
     <show-grid :show="show" @update="showGrid"></show-grid>
