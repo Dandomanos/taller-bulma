@@ -17,13 +17,13 @@ $wrapper-child: 1px dashed green;
             border:$wrapper-content;
         }
     }
-    .columns, .level {
+    .columns, .level, .is-ancestor {
         border:$wrapper-container;
     }
-    .level-left, .level-right {
+    .level-left, .level-right, .is-parent {
         border:$wrapper-content;
     }
-    .column, .level-item {
+    .column, .level-item, .is-child {
         border:$wrapper-child;
     }
 }
