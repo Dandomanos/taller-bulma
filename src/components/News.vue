@@ -52,12 +52,10 @@
             <div class="tile is-vertical">
                 <div class="tile is-parent">
                     <div class="tile is-child">
-                        <div class="tile is-child">
-                            <h1 class="title">{{News[2].title}}</h1>
-                            <p>{{News[2].content}}</p>
-                            <p>{{News[2].content}}</p>
-                            <p>{{News[2].content}}</p>
-                        </div>
+                        <h1 class="title">{{News[2].title}}</h1>
+                        <p>{{News[2].content}}</p>
+                        <p>{{News[2].content}}</p>
+                        <p>{{News[2].content}}</p>
                     </div>
                 </div>
                 <div class="tile">
