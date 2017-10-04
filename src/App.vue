@@ -81,9 +81,14 @@ html, body {
 * {
     box-sizing:border-box;
 }
-.container {
-    max-width:100%;
+
+//fix container width on hero fullheight
+@media screen and (max-width: 1023px) {
+    .container {
+        max-width:100%;
+    }
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
