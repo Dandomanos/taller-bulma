@@ -5,7 +5,7 @@
             <nav class="navbar is-primary" role="navigation">
                 <div class="navbar-brand">
                     <router-link to="hello" class="navbar-item">
-                        <img src="./assets/bulma-logo.png" alt="" width="150">
+                        <img src="./assets/bulma-white.png" alt="" width="150">
                     </router-link>
                     <button class="button navbar-burger" @click="toggleActive" :class="{'is-active':menuActive}">
                         <span></span>
@@ -24,7 +24,7 @@
                                     Google
                                 </a>
                                 <hr class="navbar-divider">
-                                <a href="http://www.bulma.iom" target="_blank" class="navbar-item">
+                                <a href="http://bulma.io/" target="_blank" class="navbar-item">
                                     Bulma
                                 </a>
                             </div>
@@ -37,8 +37,8 @@
                         <div class="navbar-item">
                             <input type="password" class="input" placeholder="Contraseña">
                         </div>
-                        <div class="navbar-item">
-                            <button class="button is-info">Entrar</button>
+                        <div class="navbar-item is-clearfix">
+                            <button class="button is-primary is-inverted is-pulled-right">Entrar</button>
                         </div>
                     </div>
                 </div>
@@ -91,6 +91,7 @@ export default {
 
 <style lang="scss">
 @import './scss/grid.scss';
+@import './scss/_var/_bulma.scss';
 @import '~bulma';
 html, body {
     margin:0;
