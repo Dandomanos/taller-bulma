@@ -83,9 +83,16 @@ html, body {
 }
 
 //fix container width on hero fullheight
-@media screen and (max-width: 1023px) {
-    .container {
-        max-width:100%;
+.hero.is-fullheight {
+    > .hero-body {
+        > .container {
+            max-width:100%;
+        }
+        @media screen and (min-width: 1024px) {
+            .container {
+                max-width:964px;
+            }
+        }
     }
 }
 
