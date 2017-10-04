@@ -1,6 +1,7 @@
 <template>
     <div @click="update" class="showGrid" :class="{'visible':show}">
         <div class="showGrid--container">
+            <!-- <img src="../../static/eye.svg" alt=""> -->
         </div>
     </div>
 </template>
@@ -19,9 +20,9 @@ export default {
 .showGrid {
     cursor:pointer;
     background-color:#ccc;
-    width:3rem;
-    height:3rem;
-    padding:0.5rem;
+    width:2.2rem;
+    height:2.2rem;
+    padding:0.2rem;
     border-radius:50%;
     position: fixed;
     right: 1rem;
@@ -35,8 +36,8 @@ export default {
         background-image:url('../assets/grid.png');
         background-repeat:no-repeat;
         background-size:cover;
-        width:2rem;
-        height:2rem;
+        width:1.8rem;
+        height:1.8rem;
         border-radius:50%;
     }
 }
