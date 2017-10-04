@@ -11,12 +11,11 @@
 </template>
 <script>
 export default {
-	methods: {
-		close(){
-			console.log('close')
-			this.$emit('close')
-		}
-	}
+    methods: {
+        close(){
+            this.$emit('close')
+        }
+    }
 }
 </script>
 
