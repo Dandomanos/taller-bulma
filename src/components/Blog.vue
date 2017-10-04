@@ -143,7 +143,7 @@ export default {
     methods: {
         postMessage() {
             this.loading = true
-            setTimeout(this.showModal,1000)
+            setTimeout(this.showModal,2000)
         },
         showModal() {
             this.modalActive = true
