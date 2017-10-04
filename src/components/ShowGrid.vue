@@ -16,17 +16,19 @@ export default {
     }
 }
 </script>
-<style lang="scss"> 
+<style lang="scss">
+$space:0.2rem;
+$size:2.2rem;
 .showGrid {
     cursor:pointer;
     background-color:#ccc;
-    width:2.2rem;
-    height:2.2rem;
-    padding:0.2rem;
+    width:$size;
+    height:$size;
+    padding:$space;
     border-radius:50%;
     position: fixed;
-    right: 1rem;
-    bottom:1rem;
+    right: $space;
+    bottom:$space;
     opacity:0.5;
     &.visible {
         background-color:lighten(olivedrab,10);
@@ -36,8 +38,8 @@ export default {
         background-image:url('../assets/grid.png');
         background-repeat:no-repeat;
         background-size:cover;
-        width:1.8rem;
-        height:1.8rem;
+        width:$size - $space*2;
+        height:$size - $space*2;
         border-radius:50%;
     }
 }
