@@ -6,7 +6,24 @@
                 <div class="hero">
                     <div class="hero-body">
                         <div class="container has-text-centered">
-                            Header
+                            <div class="level">
+                                <div class="level-item">
+                                    <router-link to="home" class="button is-link is-primary ">
+                                        Home
+                                    </router-link>
+                                </div>
+                                <div class="level-item">
+                                    <router-link to="news" class="button is-link is-primary">
+                                        News
+                                    </router-link>
+                                </div>
+                                <div class="level-item">
+                                    <router-link to="blog" class="button is-link is-primary">
+                                        Blog
+                                    </router-link>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -55,6 +72,7 @@ export default {
 
 <style lang="scss">
 @import './scss/grid.scss';
+@import './scss/_var/_bulma.scss';
 @import '~bulma';
 html, body {
     margin:0;
