@@ -86,8 +86,8 @@
                 </div>
                 <div class="field">
                     <p class="control">
-                        <button class="button is-info is-pulled-right">
-                        Enviar
+                        <button class="button is-primary is-pulled-right">
+                            Enviar
                         </button>
                     </p>
                 </div>
